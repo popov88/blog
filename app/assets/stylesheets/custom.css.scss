@@ -3,6 +3,17 @@ $navbar-default-bg: #36C;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default {
+  border-radius: 0;
+}
+
+#menu-articles {
+  color: #FFF;
+  &:hover {
+    color: #f93;
+  }
+}
+
 #logo {
   float: left;
   font-size: 16px;
@@ -10,6 +21,13 @@ $navbar-default-bg: #36C;
   text-transform: uppercase;
   letter-spacing: -1px;
   &:hover{
+    color: #f93;
+  }
+}
+
+#dropdown-btn {
+  color: #FFF;
+  &:hover {
     color: #f93;
   }
 }
