@@ -7,6 +7,20 @@ $navbar-default-bg: #36C;
   border-radius: 0;
 }
 
+.badge {
+  background-color: #36c;
+  a {
+    color: #FFF;
+    &:hover{
+      color: #f93;
+    }
+  }
+}
+
+.input_checkbox input{
+  width: auto !important;
+}
+
 #menu-articles {
   color: #FFF;
   &:hover {

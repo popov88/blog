@@ -8,6 +8,9 @@
       <div class="article-body">
         <%= truncate(article.description, length: 108) %>
         <div class="article-meta-details">
+          <% if article.categories.any? %>
+            <p>Categories: <%= render article.categories %></p>
+          <% end %>
           <small>Created by: <%= article.user.username if article.user %>,
                 <%= time_ago_in_words(article.created_at) %> ago,
                 last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
